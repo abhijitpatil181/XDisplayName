@@ -24,9 +24,11 @@ const DisplayName = () => {
       >
         <h1>Full Name Display</h1>
         <Form onSubmitHandler={onSubmitHandler} />
-        <p style={{ fontSize: "1.2rem" }}>
-          Full Name: {`${firstName} ${lastName}`}
-        </p>
+        {firstName !== "" && lastName !== "" && (
+          <p style={{ fontSize: "1.2rem" }}>
+            Full Name: {`${firstName} ${lastName}`}
+          </p>
+        )}
       </div>
     </>
   );
