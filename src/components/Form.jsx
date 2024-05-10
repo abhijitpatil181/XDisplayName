@@ -42,7 +42,10 @@ const Form = ({ onSubmitHandler }) => {
             margin: "1rem 0",
           }}
         >
-          <input type="submit" value="Submit" style={{ fontSize: "1rem" }} />
+          <button type="submit" style={{ fontSize: "1rem" }}>
+            Submit
+          </button>
+          {/* <input type="submit" value="Submit" style={{ fontSize: "1rem" }} /> */}
         </div>
       </form>
     </>
